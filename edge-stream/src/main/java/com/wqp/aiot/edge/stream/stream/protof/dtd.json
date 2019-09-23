@@ -1,0 +1,55 @@
+/*
+数据文件存储
+适用范围：云端数据存储为json文件供后续处理
+文件名定义：产口ID+边缘设备ID+标识代码(GD)+时间戳(14位)+流水序号(3位), .json后缀
+*/
+{
+  "productid":"YK20190808CP001",                  /* 产品唯一标识 */
+  "edgeid":"YK20190808ED001",                     /* 边缘设备唯一标识 */
+  "devicedata":[                    			  /* 传感设备数据 */
+    {
+      "deviceid":"YK20190808SD001",               /* 唯一标识 */
+      "gathertime":"20190806092932",		      /* 搜集时间 */
+      "dataname":"temp",            			  /* 数据名 */
+      "datavalue":"36.5",           			  /* 数据值 */
+    },
+    {
+      "deviceid":"YK20190808SD002",
+      "gathertime":"20190806092932",
+      "dataname":"humidity",
+      "datavalue":"45"
+    },
+    {
+      "deviceid":"YK20190808SD003",
+      "gathertime":"20190806092932",
+      "dataname":"api",
+      "datavalue":"60",
+    },
+    {
+      "deviceid":"YK20190808SD004",
+      "gathertime":"20190806092932",
+      "dataname":"pm2.5",
+      "datavalue":"70"
+    }
+  ]
+}
+
+
+/*
+适用范围：设备心跳数据
+文件名定义：产口ID+边缘设备ID+标识代码(HD)+时间戳(14位)+流水序号(3位), .json后缀
+*/
+{
+  "device":{                          /* 传感设备 */
+    "deviceid":"YK20190808SD001",     /* 唯一标识 */
+    "state":"true",                   /* 状态 */
+  },
+  edge:{                              /* 边缘设备 */
+    "edgeid":"YK20190808ED001",       /* 唯一标识 */
+    "state":"true",                   /* 状态 */
+    "memory":{},                      /* 内存 */
+    "diskspace":{},                   /* 磁盘空间 */
+    "softversion":"0.1.0",            /* 软件版本 */
+  },
+  "gathertime":"20190806092932",      /* 搜集时间 */
+}

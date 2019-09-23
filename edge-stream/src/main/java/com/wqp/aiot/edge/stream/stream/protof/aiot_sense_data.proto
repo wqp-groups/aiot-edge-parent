@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+// option java_package="com.wqp.aiot.edge.sense.stream.netty";
+option java_outer_classname="SenseDeviceProtof";
+
+message SenseData{
+    string productsn = 100;                 // 产品唯一标识
+    string edgesn = 101;                    // 边缘设备序列号
+
+    // 传感设备数据定义
+    message DeviceData{
+        string sn = 100;                        // 传感设备唯一标识
+        string version = 101;                   // 传感设备版本
+        string gathertime = 102;                // 搜集时间
+        string dataname = 103;                  // 数据名称
+        string datavalue = 104;                 // 数据值
+    }
+
+    repeated DeviceData devicedata = 102;   // 传感设备数据
+    string uploadtime = 103;                // 上传时间
+}
+

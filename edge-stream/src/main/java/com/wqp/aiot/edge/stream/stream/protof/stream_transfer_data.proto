@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+// option java_package="com.wqp.aiot.edge.sense.stream.protof";
+option java_outer_classname="StreamTransferProtof";
+
+message StreamTransferData{
+    string transfertime = 100;      // 传输时间(开始)
+    string edgeid = 101;            // 边缘设备唯一标识
+    string origindata = 102;        // 源数据
+    string originname = 103;        // 源数据名称
+    string origintopic = 104;       // 源数据主题
+}

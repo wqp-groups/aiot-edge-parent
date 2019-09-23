@@ -1,0 +1,9 @@
+
+aiot:
+  edge:
+    sense:
+      config-file: /aiot/server/aiotedgesenseconfig.json
+    netty:
+      host: 127.0.0.1
+      port: 9999
+      frame-delimiter: $$@$$

@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: AiotEdgeSense
+  profiles:
+#    active: linux #linux  #windows
+
+
+aiot:
+  edge:
+    sense:
+      config-file: /aiot/server/aiotedgesenseconfig.json # /aiot/server/aiotedgesenseconfig.json  #d:/aiot/server/aiotedgesenseconfig.json
+    netty:
+      host: 127.0.0.1
+      port: 9999
+      frame-delimiter: $$@$$
+    heartbeat:
+      frequency: 180000  # 毫秒
+
