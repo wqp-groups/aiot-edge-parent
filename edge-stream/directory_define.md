@@ -11,7 +11,7 @@
     /sensor                             传感器程序目录
         /uploaddata                     传感器数据上传目录
         /backupdata                     传感器数据上传备份目录
-    /java                               jdk 安装目录
+    /software                           软件安装目录,如jdk
     /pkg                                安装包存储目录
 ```
                 
