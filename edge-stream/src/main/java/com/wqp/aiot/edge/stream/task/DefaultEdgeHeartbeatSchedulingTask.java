@@ -1,6 +1,6 @@
 package com.wqp.aiot.edge.stream.task;
 
-import com.wqp.aiot.edge.stream.entity.AiotEdgeSenseConfigEntity;
+import com.wqp.aiot.edge.stream.entity.AiotEdgeConfigEntity;
 import com.wqp.aiot.edge.stream.entity.EdgeHeartbeatEntity;
 import com.wqp.aiot.edge.stream.stream.netty.ChannelHandlerClient;
 import com.wqp.aiot.edge.stream.stream.protof.StreamTransferProtof;
@@ -43,7 +43,7 @@ import java.util.concurrent.TimeUnit;
 public class DefaultEdgeHeartbeatSchedulingTask implements SchedulingConfigurer {
 
     @Autowired
-    private AiotEdgeSenseConfigEntity aiotEdgeSenseConfigEntity;
+    private AiotEdgeConfigEntity aiotEdgeSenseConfigEntity;
 
 
     @Override

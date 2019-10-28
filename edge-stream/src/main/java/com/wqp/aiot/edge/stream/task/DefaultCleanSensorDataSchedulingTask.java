@@ -1,6 +1,6 @@
 package com.wqp.aiot.edge.stream.task;
 
-import com.wqp.aiot.edge.stream.entity.AiotEdgeSenseConfigEntity;
+import com.wqp.aiot.edge.stream.entity.AiotEdgeConfigEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
@@ -22,7 +22,7 @@ import java.util.Arrays;
 public class DefaultCleanSensorDataSchedulingTask implements SchedulingConfigurer {
 
     @Autowired
-    private AiotEdgeSenseConfigEntity aiotEdgeSenseConfigEntity;
+    private AiotEdgeConfigEntity aiotEdgeSenseConfigEntity;
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {

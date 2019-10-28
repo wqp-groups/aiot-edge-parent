@@ -1,7 +1,7 @@
 package com.wqp.aiot.edge.stream.task;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.wqp.aiot.edge.stream.entity.AiotEdgeSenseConfigEntity;
+import com.wqp.aiot.edge.stream.entity.AiotEdgeConfigEntity;
 import com.wqp.aiot.edge.stream.entity.SenseDeviceEntity;
 import com.wqp.aiot.edge.stream.stream.netty.ChannelHandlerClient;
 import com.wqp.aiot.edge.stream.stream.protof.StreamTransferProtof;
@@ -40,7 +40,7 @@ import java.util.concurrent.TimeUnit;
 public class DefaultNettyProcessSchedulingTask implements SchedulingConfigurer {
 
     @Autowired
-    private AiotEdgeSenseConfigEntity aiotEdgeSenseConfigEntity;
+    private AiotEdgeConfigEntity aiotEdgeSenseConfigEntity;
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {

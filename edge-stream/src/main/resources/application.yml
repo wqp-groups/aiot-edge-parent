@@ -3,7 +3,7 @@ spring:
   application:
     name: AiotEdgeSense
   profiles:
-#    active: linux #linux  #windows
+    active: linux #linux  #windows
 
 
 aiot:
