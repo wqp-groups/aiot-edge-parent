@@ -9,7 +9,7 @@ spring:
 aiot:
   edge:
     sense:
-      config-file: /aiot/server/aiotedgesenseconf.json # /aiot/server/aiotedgesenseconf.json  #d:/aiot/server/aiotedgesenseconf.json
+      config-file: /aiot/server/aiotedgeconf.json # /aiot/server/aiotedgeconf.json  #d:/aiot/server/aiotedgeconf.json
     netty:
       host: 127.0.0.1
       port: 9999

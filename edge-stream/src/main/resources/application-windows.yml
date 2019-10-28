@@ -2,7 +2,7 @@
 aiot:
   edge:
     sense:
-      config-file: D:\aiot\server\aiotedgesenseconf.json
+      config-file: D:\aiot\server\aiotedgeconf.json
     netty:
       host: 127.0.0.1
       port: 9999
